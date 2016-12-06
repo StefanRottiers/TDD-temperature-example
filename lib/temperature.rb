@@ -10,6 +10,11 @@ class Temperature
         @temperature = temperature
     end
 
+    def to_kelvin
+      273.15 + temperature
+
+    end
+
     def to_fahrenheit
         FAHRENHEIT_OFFSET + temperature * FAHRENHEIT_SLOPE
     end
